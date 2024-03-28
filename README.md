@@ -73,7 +73,7 @@ This script will download automatically the last version of v4l2loopback from
 
 4.  Check with command:
 
-        sudo dmesd
+        sudo dmesg
 
     Output will be:
         
