@@ -108,7 +108,10 @@ Certainly there are many ways to do that, but a simple way is creating a service
         Starting service
         OK.Bye bye
 
-2. To remove this service execute:
+2. Now the module will load before the user session starts, you can change **install.sh** script to adapt to your necessities.
+
+
+3. To remove this service execute:
 
         sudo sh uninstall.sh
 
@@ -118,5 +121,3 @@ Certainly there are many ways to do that, but a simple way is creating a service
         Removed "/etc/systemd/system/multi-user.target.wants/v4l2loopback-silverblue.service".
         Unloading module v4l2loopback
         Ok.Bye bye
-
-3. Now the module will load before the user session starts, you can change **install.sh** script to adapt to your necessities.
