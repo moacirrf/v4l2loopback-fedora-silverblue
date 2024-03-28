@@ -121,3 +121,8 @@ Certainly there are many ways to do that, but a simple way is creating a service
         Removed "/etc/systemd/system/multi-user.target.wants/v4l2loopback-silverblue.service".
         Unloading module v4l2loopback
         Ok.Bye bye
+
+
+### Next features
+- Automatically rebuild the module if module refuse to load.
+- Or a graphical notification when module refuse to load (hard to do).
