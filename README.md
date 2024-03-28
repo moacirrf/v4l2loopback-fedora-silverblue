@@ -21,7 +21,16 @@ This script will download automatically the last version of v4l2loopback from
         OS/Arch:      linux/amd64
 
 ### Preparing build to your Fedora Version
-1. Checkout or download all this files on local directory
+1. Checkout or download all this files on a directory, after download you must have this files:
+
+        v4l2loopback-fedora-silverblue
+        ├── Dockerfile
+        ├── install.sh
+        ├── load-v4l2loopback.sh
+        ├── podman_build.sh
+        ├── README.md
+        └── uninstall.sh
+
 
 2. Verify your Fedora version with the command
     
@@ -44,14 +53,33 @@ This script will download automatically the last version of v4l2loopback from
 
         sh podman_build.sh
 
-    A folder called **build** will be created
+    A folder called **build** will be created and the module **v4l2loopback.ko** will be generated:
 
+        ├── build
+        │   └── v4l2loopback
+        │       └── v4l2loopback.ko
+        ├── Dockerfile
+        ├── install.sh
+        ├── load-v4l2loopback.sh
+        ├── podman_build.sh
+        ├── README.md
+        └── uninstall.sh
 
-2.  Now load module with executing the file load-v4.sh
+2.  Load module:
 
         sudo sh load-v4l2loopback.sh
 
 3   Great! your module must be loaded and working.
+
+4.  Check with command:
+
+        sudo dmesd
+
+    Output will be:
+        
+        [18109.162005] videodev: Linux video capture interface: v2.00
+        [18109.164951] v4l2loopback driver version 0.13.1 (snapshot) loaded
+
 
 ### Possible or Inevitable Problems
 
@@ -84,11 +112,11 @@ Certainly there are many ways to do that, but a simple way is creating a service
 
         sudo sh uninstall.sh
 
-    output will be
+    output will be:
 
         Removing service...
         Removed "/etc/systemd/system/multi-user.target.wants/v4l2loopback-silverblue.service".
         Unloading module v4l2loopback
         Ok.Bye bye
 
-3. Now the module will load before your the user session starts, you can't change install.sh script to adapt to your necessities.
+3. Now the module will load before the user session starts, you can change **install.sh** script to adapt to your necessities.
