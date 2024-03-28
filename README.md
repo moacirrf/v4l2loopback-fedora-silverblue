@@ -1,7 +1,7 @@
 # v4l2loopback for Fedora Silverblue
 ***
 
-A simple way to build v4l2loopback module on Fedora Silverblue flavour( Fedora kinoite).
+A simple way to build v4l2loopback module on Fedora Silverblue flavours (Fedora kinoite).
 
 This script will download automatically the last version of v4l2loopback from
 [https://github.com/umlaeute/v4l2loopback](https://github.com/umlaeute/v4l2loopback).  
