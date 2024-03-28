@@ -9,7 +9,7 @@ This script will download automatically the last version of v4l2loopback from
 ### Dependencies
 1. **Podman**, check podman instalation with the command:
  
-    > podman version
+        podman version
     
     The output is something like
     
