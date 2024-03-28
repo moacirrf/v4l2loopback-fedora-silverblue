@@ -90,3 +90,5 @@ Certainly there are many ways to do that, but a simple way is creating a service
         Removed "/etc/systemd/system/multi-user.target.wants/v4l2loopback-silverblue.service".
         Unloading module v4l2loopback
         Ok.Bye bye
+
+3. Now the module will load before your the user session starts, you can't change install.sh script to adapt to your necessities.
