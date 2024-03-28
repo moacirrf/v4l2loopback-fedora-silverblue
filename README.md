@@ -20,6 +20,32 @@ This script will download automatically the last version of v4l2loopback from
         Built:        Mon Feb 19 06:50:31 2024
         OS/Arch:      linux/amd64
 
+## Express build and instalation
+If you just want build and run, lets go!:
+
+1. Build
+        
+        sh podman_build.sh
+
+2. Install the module as a systemd service
+
+        sudo sh install.sh
+
+3. Check if all is ok
+
+        sudo dmesg
+
+    Output will be:
+        
+        [18109.162005] videodev: Linux video capture interface: v2.00
+        [18109.164951] v4l2loopback driver version 0.13.1 (snapshot) loaded
+
+If module stop works just repeat all steps again.
+
+## Detailed Build
+
+***
+
 ### Preparing build to your Fedora Version
 1. Checkout or download all this files on a directory, after download you must have this files:
 
