@@ -23,15 +23,19 @@ This script will download automatically the last version of v4l2loopback from
 ## Express build and instalation
 If you just want build and run, lets go!:
 
-1. Build
+1. Edit **Dockerfile** to configure your Fedora Version, default is **40**
+
+   > ARG FEDORA_VERSION=**YOUR_VERSION**
+   
+3. Build
         
         sh podman_build.sh
 
-2. Install the module as a systemd service
+4. Install the module as a systemd service
 
         sudo sh install.sh
 
-3. Check if all is ok
+5. Check if all is ok
 
         sudo dmesg
 
