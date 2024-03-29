@@ -7,7 +7,7 @@ This script will download automatically the last version of v4l2loopback from
 [https://github.com/umlaeute/v4l2loopback](https://github.com/umlaeute/v4l2loopback).  
 
 ### Dependencies
-1. **Podman**, check podman instalation with the command:
+1. **Podman**, check podman installation with the command:
  
         podman version
     
