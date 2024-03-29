@@ -20,7 +20,7 @@ This script will download automatically the last version of v4l2loopback from
         Built:        Mon Feb 19 06:50:31 2024
         OS/Arch:      linux/amd64
 
-## Express build and instalation
+## Express build and installation
 If you just want build and run, lets go!:
 
 1. Edit **Dockerfile** to configure your Fedora Version, default is **40**
