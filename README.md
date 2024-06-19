@@ -29,7 +29,7 @@ If you just want build and run, lets go!:
    
 3. Build
         
-        sh podman_build.sh
+        sh podman_build.sh --no-cache
 
 4. Install the module as a systemd service
 
@@ -152,10 +152,18 @@ Certainly there are many ways to do that, but a simple way is creating a service
         Unloading module v4l2loopback
         Ok.Bye bye
 
+
 ### Build diretory is empty.
 Execute the following command
-
+    
         sh podman_build.sh --no-cache
+        
+### Can i use this in other distribution?
+Sure you can! just adapt the dockerfile to your distribution.
+
+https://github.com/moacirrf/new-lg4ff-fedora-silverblue/blob/main/Dockerfile
+
+You can ask CHATGPT to convert dockerfile content to work with Ubuntu.
 
 ### Next features
 - Automatically rebuild the module if module refuse to load.
