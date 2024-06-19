@@ -161,7 +161,7 @@ Execute the following command
 ### Can i use this in other distribution?
 Sure you can! just adapt the dockerfile to your distribution.
 
-https://github.com/moacirrf/new-lg4ff-fedora-silverblue/blob/main/Dockerfile
+https://github.com/moacirrf/v4l2loopback-fedora-silverblue/blob/main/Dockerfile
 
 You can ask CHATGPT to convert dockerfile content to work with Ubuntu.
 
