@@ -1,13 +1,14 @@
-ARG FEDORA_VERSION=40
+ARG FEDORA_VERSION=42
 FROM registry.fedoraproject.org/fedora:$FEDORA_VERSION as v4l2loopback_git
 WORKDIR workdir
 RUN dnf install git -y
 RUN git clone https://github.com/umlaeute/v4l2loopback
+RUN cd v4l2loopback && git checkout v0.13.0
 FROM registry.fedoraproject.org/fedora:$FEDORA_VERSION
 WORKDIR workdir
 VOLUME ["/build"]
 RUN dnf update -y
-RUN dnf install kernel-modules-internal-`uname -r` kernel-devel-`uname -r` -y
+RUN dnf install kernel-modules-internal-`uname -r` kernel-devel-`uname -r` awk  -y
 COPY --from=v4l2loopback_git workdir/v4l2loopback ./
 RUN make clean
 RUN make

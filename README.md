@@ -23,7 +23,7 @@ This script will download automatically the last version of v4l2loopback from
 ## Express build and installation
 If you just want build and run, lets go!:
 
-1. Edit **Dockerfile** to configure your Fedora Version, default is **40**
+1. Edit **Dockerfile** to configure your Fedora Version, default is **42**
 
    > ARG FEDORA_VERSION=**YOUR_VERSION**
    
@@ -68,13 +68,13 @@ If module stop works just repeat all steps again.
     
     The output is something like
     
-        6.8.1-300.fc40.x86_64
+        6.14.3-300.fc42.x86_64
 
-    The **fc40** says that we are using **Fedora 40**
+    The **fc42** says that we are using **Fedora 42**
 
    Edit file **Dockerfile**  and change the first line to your version:
 
-        ARG FEDORA_VERSION=40
+        ARG FEDORA_VERSION=42
 
 
 ### Building
