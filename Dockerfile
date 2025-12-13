@@ -3,7 +3,7 @@ FROM registry.fedoraproject.org/fedora:$FEDORA_VERSION as v4l2loopback_git
 WORKDIR workdir
 RUN dnf install git -y
 RUN git clone https://github.com/umlaeute/v4l2loopback
-RUN cd v4l2loopback && git checkout v0.13.0
+RUN cd v4l2loopback
 FROM registry.fedoraproject.org/fedora:$FEDORA_VERSION
 WORKDIR workdir
 VOLUME ["/build"]
