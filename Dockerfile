@@ -1,4 +1,4 @@
-ARG FEDORA_VERSION=42
+ARG FEDORA_VERSION=43
 FROM registry.fedoraproject.org/fedora:$FEDORA_VERSION as v4l2loopback_git
 WORKDIR workdir
 RUN dnf install git -y
