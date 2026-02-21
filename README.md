@@ -3,8 +3,12 @@
 
 A simple way to build v4l2loopback module on Fedora Silverblue flavours (Fedora kinoite).
 
-This script will download automatically the last version of v4l2loopback from
+This script will do:
+- Download automatically the last version of v4l2loopback from
 [https://github.com/umlaeute/v4l2loopback](https://github.com/umlaeute/v4l2loopback).  
+
+- Install as a systemd service.
+- Rebuild when systemd can't start.
 
 ### Dependencies
 1. **Podman**, check podman installation with the command:
@@ -164,7 +168,3 @@ Sure you can! just adapt the dockerfile to your distribution.
 https://github.com/moacirrf/v4l2loopback-fedora-silverblue/blob/main/Dockerfile
 
 You can ask CHATGPT to convert dockerfile content to work with Ubuntu.
-
-### Next features
-- Automatically rebuild the module if module refuse to load.
-- Or a graphical notification when module refuse to load (hard to do).
