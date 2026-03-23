@@ -8,7 +8,7 @@ This script will do:
 [https://github.com/umlaeute/v4l2loopback](https://github.com/umlaeute/v4l2loopback).  
 
 - Install as a systemd service.
-- Rebuild when systemd can't start.
+- Rebuild automatically after a system updade.
 
 ### Dependencies
 1. **Podman**, check podman installation with the command:
