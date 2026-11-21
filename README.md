@@ -27,7 +27,7 @@ This script will do:
 ## Express build and installation
 If you just want build and run, lets go!:
 
-1. Edit **Dockerfile** to configure your Fedora Version, default is **43**
+1. Edit **Dockerfile** to configure your Fedora Version, default is **45**
 
    > ARG FEDORA_VERSION=**YOUR_VERSION**
    
